@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repository is
 
-This is **not a software project** — there is no build, lint, or test tooling, and none should be added speculatively. It's an asset and record-keeping repo for **Payton's Prints**, a custom pen-and-ink illustration / print shop business. It holds marketing collateral, logo/brand assets, QR codes, and a running log of work done on the business's Squarespace storefront.
+This is primarily an asset and record-keeping repo for **Payton's Prints**, a custom pen-and-ink illustration / print shop business — marketing collateral, logo/brand assets, QR codes — plus, as of the `site/` directory, the actual React source for the live website. Don't add build/lint/test tooling speculatively outside of `site/`; inside `site/`, follow its existing `package.json` scripts (`npm run dev` / `npm run build` / `npm run preview`).
 
 ## Repository structure
 
@@ -13,7 +13,8 @@ This is **not a software project** — there is no build, lint, or test tooling,
   - `print-ready-pdfs/` — final PDFs at exact print scale, generated from the design canvas. Regenerate these from the canvas artboards rather than editing a PDF directly.
 - `logo/` — brand logo and business card assets (source PNGs/PDF plus a `print-ready/` subfolder with flattened JPG/PNG exports for the printer).
 - `qr-code/` — QR codes linking to the shop, in multiple formats (PNG/SVG/PDF, plus transparent variants).
-- `website/website-work-log.md` — the running record of edits made to the live Squarespace site (`sheep-sprout-cfpz.squarespace.com`, future custom domain `www.paytonsprints.com`). **There is no local website codebase** — Squarespace hosts and stores the site itself; all site changes are made live in the Squarespace editor (via browser automation) and then logged here. Read this file before doing any website work to pick up open items, and append to it (Completed / Open / Notes sections) after making changes so the record stays current.
+- `site/` — the React (Vite + TypeScript) source for the live website, deployed to GitHub Pages by `.github/workflows/deploy.yml` on every push to `main` that touches `site/**`. Product data lives in `site/src/data/products.ts`; the Stripe Payment Link and Formspree endpoint used for checkout/contact are `TODO`-marked placeholders in that file and `site/src/data/contact.ts` until real IDs are dropped in. See `docs/superpowers/specs/2026-09-14-react-site-design.md` for the design and `docs/superpowers/plans/2026-09-14-react-site.md` for how it was built.
+- `website/website-work-log.md` — the running record of edits made to the site. As of 2026-09-14 the site moved from Squarespace to the React app in `site/`; entries before that date describe the retired Squarespace configuration, kept for history.
 
 ## Working conventions
 
