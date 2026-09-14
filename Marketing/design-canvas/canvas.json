@@ -1,0 +1,9 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 576, "h": 384, "title": "Front", "print": "fixed" },
+    { "file": "Back.dc.html", "x": 656, "y": 0, "w": 576, "h": 384, "title": "Back", "print": "fixed" },
+    { "file": "MainVertical.dc.html", "x": 0, "y": 500, "w": 528, "h": 816, "title": "Front (Vertical, Half-Sheet)", "print": "fixed" },
+    { "file": "BackVertical.dc.html", "x": 608, "y": 500, "w": 528, "h": 816, "title": "Back (Vertical, Half-Sheet)", "print": "fixed" }
+  ],
+  "launch": { "view": "canvas" }
+}
