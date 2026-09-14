@@ -1,0 +1,42 @@
+.header {
+  background: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.brand {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--color-ink);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.nav {
+  display: flex;
+  gap: var(--space-3);
+}
+.link {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.active {
+  color: var(--color-accent);
+}

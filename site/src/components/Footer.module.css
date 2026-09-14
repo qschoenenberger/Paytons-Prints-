@@ -1,0 +1,13 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-5);
+  padding: var(--space-3) 0;
+  color: var(--color-ink-soft);
+  font-size: 0.85rem;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
