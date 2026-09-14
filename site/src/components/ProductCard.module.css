@@ -1,0 +1,32 @@
+.card {
+  display: block;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--color-ink);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.card:hover {
+  box-shadow: 0 6px 16px rgba(32, 31, 29, 0.1);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.body {
+  padding: var(--space-2);
+}
+.name {
+  font-size: 1.05rem;
+  margin: 0 0 var(--space-1);
+}
+.price {
+  color: var(--color-accent);
+  font-weight: 600;
+  margin: 0;
+}
